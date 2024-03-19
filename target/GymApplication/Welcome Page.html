@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: radial-gradient(circle, #000000, #004a8f);
+            color: #fff;
+            padding: 20px;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h2 {
+            color: #807fc0;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .navbar {
+            background: radial-gradient(circle, #ff8040, #c0c0c0);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-nav {
+            animation: fadeInUp 1.5s ease-out;
+            margin-top: 10px;
+        }
+
+        .nav-item {
+            opacity: 0;
+            animation: fadeInUp 1.5s forwards;
+            margin-right: 20px;
+        }
+
+        .nav-link {
+            color: #fff;
+            background: none;
+            padding: 0;
+            margin-right: 10px;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link svg {
+            fill: #fff;
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+        }
+
+        .nav-link:hover {
+            color: #ffcc80;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>ZumbaSync: Effortless Participant and Batch Management</h2>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="batch.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M21 3H3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h5v2h2v-2h7v2h2v-2h5a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zm-1 2v12H4V5h16z" />
+                            </svg>
+                            Add Batch
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="participant.jsp">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm1.5 7h-3v-1h3v1z" />
+                            </svg>
+                            Add Participant
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="update-batches.jsp">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path d="M10 12h4v8h-4z" />
+                                <path d="M3 3h18v2H3zm3 4h12v2H6zm6 4h6v2h-6z" />
+                            </svg>
+                            Update Batch
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="update-participant">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M17.66 2.93L2 18.59l1.41 1.41L5 18l14.63-14.63-1.41-1.44zM5 18l1.94-1.94L7 18l-1.47 1.47L5 18zM19 6v10H5V8h14V6h-2z" />
+                            </svg>
+                            Update Participant
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Add your content here -->
+
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (for Bootstrap features) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
